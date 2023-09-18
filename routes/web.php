@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::view('/users', 'users.showAll')->name('users.all'); //no need to create a controller for this route since we use api in the front end
+Route::view('/game', 'game.show')->name('game.show');
